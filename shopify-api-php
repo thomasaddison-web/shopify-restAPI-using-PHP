@@ -6,7 +6,7 @@ function productAPI($handles){
     $curl = curl_init();
 
     curl_setopt_array($curl, array(
-      CURLOPT_URL => "https://express-computer-systems.myshopify.com/admin/api/2019-04/products.json?handle=" . implode( ",", $handles),
+      CURLOPT_URL => "https://test.myshopify.com/admin/api/2019-04/products.json?handle=" . implode( ",", $handles),
       CURLOPT_RETURNTRANSFER => true,
       CURLOPT_ENCODING => "",
       CURLOPT_MAXREDIRS => 10,
